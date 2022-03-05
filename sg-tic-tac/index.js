@@ -56,10 +56,10 @@ function handleResultValidation(){
 const announce =(type)=>{
     switch(type){
         case PLAYERO_WON:
-            announcer.innerHTML='Player <span class="playerO">O </span>Won';
+            announcer.innerHTML='Player <span class="playerO">O </span> Won';
             break;
         case PLAYERX_WON:
-            announcer.innerHTML='Player <span class="playerX">X</span>Won';
+            announcer.innerHTML='Player <span class="playerX">X </span> Won';
             break;
         case TIE:
             announcer.innerText='Tie' ;   
@@ -71,6 +71,7 @@ const announce =(type)=>{
 const isValidAction= (tile)=>{
 
     if (tile.innerText ==='X' || tile.innerText ==='O'){
+        
         return false;
     }
     return true;

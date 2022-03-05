@@ -7,10 +7,11 @@ class Student{
     }
 }
 
-const testStudent = new Student("xxx", 12);
+ const testStudent = new Student("xxx", 12);
 
 
 const classroom1 = [testStudent, testStudent];
+
 
 for(let i=0; i <= 100; i++){
     let index = parseInt(Math.random() * 100);
@@ -20,6 +21,7 @@ for(let i=0; i <= 100; i++){
 }
 
 const classroom2 = [testStudent, testStudent];
+console.log('classroom2'+classroom2);
 
 for(let i=0; i <= 100; i++){
     let index = parseInt(Math.random() * 100);
@@ -32,6 +34,7 @@ const filtered = classroom1.filter(function(item) {
 
     for(let i=0; i < classroom2.length; i++){
         if(classroom2[i].name == item.name && classroom2[i].age == item.age){
+            
             return item;
         }
     }
