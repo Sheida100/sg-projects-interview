@@ -7,10 +7,11 @@ class Student{
     }
 }
 
- const testStudent = new Student("xxx", 12);
+//  const testStudent = new Student("xxx", 12);
 
 
-const classroom1 = [testStudent, testStudent];
+// const classroom1 = [testStudent, testStudent];
+const classroom1=[];
 
 
 for(let i=0; i <= 100; i++){
@@ -20,8 +21,9 @@ for(let i=0; i <= 100; i++){
     classroom1.push(studentToAdd);
 }
 
-const classroom2 = [testStudent, testStudent];
-console.log('classroom2'+classroom2);
+// const classroom2 = [testStudent, testStudent];
+const classroom2=[];
+
 
 for(let i=0; i <= 100; i++){
     let index = parseInt(Math.random() * 100);
